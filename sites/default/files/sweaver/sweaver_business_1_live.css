@@ -1,0 +1,56 @@
+#navigation li a {
+  margin-top: 0px;
+}
+
+#header #navigation li a {
+  padding-top: 1px;
+  margin-top: 106px;
+}
+
+h2 a {
+  margin-top: 55px;
+}
+
+#sitename h2 a {
+  margin-top: 83px;
+}
+
+div #sitename h2 a {
+  margin-top: 91px;
+}
+
+#header div #sitename h2 a {
+  margin-top: 91px;
+}
+
+#wrap #header div #sitename h2 a {
+  margin-top: 134px;
+}
+
+body #wrap #header div #sitename h2 a {
+  padding-top: 0px;
+}
+
+#header li a {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+header .submitted {
+  color: #000000;
+  background-color: #aba9a9;
+  line-height: 19px;
+  font-size: 17px;
+  font-style: normal;
+}
+
+ul li a {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#main-menu ul li a {
+  padding-top: 0px;
+  margin-top: 100px;
+}
+
