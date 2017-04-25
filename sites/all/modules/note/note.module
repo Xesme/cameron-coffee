@@ -1,0 +1,38 @@
+<?php
+function note_menu(){
+  $items = array();
+  $items['note_save'] = array(
+    'title' => 'Comment saved!',
+    'page callback' => 'note_save',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK
+  );
+  $items['note_delete'] = array(
+    'title' => "Comment Deleted Fool",
+    'page callback' => 'note_delete',
+    'access callback' =>  TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+// using hook_comment
+// hyper link to guide for Drupal 7 hooks
+// https://api.drupal.org/api/drupal/includes!module.inc/group/hooks/7.x
+
+function note_save() {
+return "<p> Your comment has been saved.</p>";
+}
+
+function note_delete() {
+  return "<p> Your comment has been deleted, don't be such a newb.</p>";
+}
+
+function note_comment_publish() {
+  // drupal_set_message('Your comment has been saveddddddd');
+  $_GET['destination'] = 'note_save';
+}
+
+function note_comment_delete() {
+  $_GET['destination'] = "note_delete";
+}
