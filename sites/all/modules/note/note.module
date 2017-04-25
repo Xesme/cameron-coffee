@@ -2,15 +2,21 @@
 function note_menu(){
   $items = array();
   $items['note_save'] = array(
-    'title' => 'Comment saved!',
+    'title' => 'Comment Saved!',
     'page callback' => 'note_save',
     'access callback' => TRUE,
     'type' => MENU_CALLBACK
   );
   $items['note_delete'] = array(
-    'title' => "Comment Deleted Fool",
+    'title' => "Comment Deleted!",
     'page callback' => 'note_delete',
     'access callback' =>  TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['note_edit'] = array(
+    'title' => "Comment Updated!",
+    'page callback' => 'note_edit',
+    'access callback' => TRUE,
     'type' => MENU_CALLBACK,
   );
   return $items;
@@ -28,11 +34,21 @@ function note_delete() {
   return "<p> Your comment has been deleted, don't be such a newb.</p>";
 }
 
+function note_edit() {
+  return "<p> Your comment has been updated!</p>";
+}
+
 function note_comment_publish() {
-  // drupal_set_message('Your comment has been saveddddddd');
-  $_GET['destination'] = 'note_save';
+  drupal_set_message('Your comment has been published!');
+  // $_GET['destination'] = 'note_save';
 }
 
 function note_comment_delete() {
-  $_GET['destination'] = "note_delete";
+  drupal_set_message('Your comment has been delete you newb!');
+  // $_GET['destination'] = "note_delete";
+}
+
+function note_comment_update() {
+  drupal_set_message('Your comment has been updated!');
+  $_GET['destination'] = 'note_edit';
 }
