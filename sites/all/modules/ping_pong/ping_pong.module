@@ -8,9 +8,9 @@ function ping_pong_menu() {
     'access callback' => TRUE,
     'type' => MENU_NORMAL_ITEM,
   );
-  $items['ping_pong_sucess'] = array(
+  $items['ping_pong_success'] = array(
     'title' => 'Sucess',
-    'page callback' => 'ping_pong_sucess',
+    'page callback' => 'ping_pong_success',
     'access callback' => TRUE,
     'type' => MENU_CALLBACK,
   );
@@ -22,6 +22,8 @@ function ping_pong_form() {
     '#title' => 'Count Goal',
     '#type' => 'textfield',
     '#description' => t('Please enter the number you want to count up to.'),
+    '#element_validate' => array('element_validate_integer_positive'),
+    '#required' => TRUE,
   );
 
   $form['submit'] = array(

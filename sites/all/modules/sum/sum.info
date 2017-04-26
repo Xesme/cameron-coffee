@@ -1,0 +1,5 @@
+name = Sum Calculator
+description = The sum of two integers is calculated.
+package = Epicodus Examples
+core = 7.x
+files[] = sum.module
