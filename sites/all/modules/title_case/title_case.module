@@ -21,6 +21,7 @@ function title_case_form() {
     '#title' => 'Title Goal',
     '#type' => 'textfield',
     '#description' => t('Please enter the phrase you would like converted to title case.'),
+    '#required' => TRUE, 
   ];
 
   $form['submit'] = [
