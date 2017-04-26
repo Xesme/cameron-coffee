@@ -49,6 +49,6 @@ function note_comment_delete() {
 }
 
 function note_comment_update() {
-  drupal_set_message('Your comment has been updated!');
-  $_GET['destination'] = 'note_edit';
+  drupal_set_message('Your comment has been updated, try not to mess it up next time!');
+  // $_GET['destination'] = 'note_edit';
 }

@@ -1,5 +1,0 @@
-name = Comment
-description = Displays comment messages. 
-package = Epicodus Practice
-core = 7.x
-files[] = comment.module

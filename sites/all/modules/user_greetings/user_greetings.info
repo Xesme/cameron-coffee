@@ -1,5 +1,0 @@
-name = User Greetings
-description = Custom user greetings
-package = Epicodus Examples
-core = 7.x
-files[] = user_greetings.module
